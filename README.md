@@ -1,6 +1,6 @@
 # timSort-node: Node.js Package for Python's Sorting Algorithm, Timsort
 
-[![npm package](https://nodei.co/npm/timsort-node.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/timsort-node/)
+[![npm package](https://nodei.co/npm/timsort-node.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/timsort-node)
 
 [![npm version](https://badge.fury.io/js/timsort-node.svg)](https://badge.fury.io/js/timsort-node)
 
