@@ -18,6 +18,7 @@ In `example.js`, a few examples are shown. You may also require `arrayCreator.js
 
 To run: 
 ```javascript
+const timSort = require('timsort-node')
 let array = [4, 6, 9, 2] //or any array
 timSort(array) //results in: [2, 4, 6, 9]
 ```
