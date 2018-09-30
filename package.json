@@ -1,0 +1,15 @@
+{
+  "name": "timsort-node",
+  "version": "1.0.0",
+  "description": "Allows the use of Python's Timsort Algorithm in Javascript.",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": [],
+  "author": "Richard Scheiwe <rscheiwe@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "mocha": "^5.2.0"
+  }
+}
