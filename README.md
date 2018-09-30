@@ -33,3 +33,17 @@ let array = [someArray]
 assert.deepEqual(timSort(array), array.sort(compare)) //where 'compare' is predefined at the beginning of index.test.js
 ```
 If the dependency for running tests (Mocha) is properly installed, simply write your tests and run `npm run test` in the console/terminal. 
+
+## Contributing
+
+Please read [CONTRIBUTING.md](https://github.com/rscheiwe/npm-timsort/contributing.md) for details on our code of conduct, and the process for submitting pull requests.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+
+### Acknowledgments
+
+* [This gist](https://gist.github.com/brandonskerritt/f6ccc000ab6527769999fd0a9ebf59de) as initial inspiration
+
+
