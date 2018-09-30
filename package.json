@@ -1,23 +1,14 @@
 {
   "name": "timsort-node",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Allows the use of Python's Timsort Algorithm in Javascript.",
   "homepage": "https://github.com/rscheiwe/npm-timsort",
   "main": "index.js",
   "directories": {
-  "test": "./test"
-},
+    "test": "./test"
+  },
   "scripts": {
     "test": "mocha"
-  },
-  "keywords": [],
-  "author": {
-    "name": "Richard Scheiwe",
-    "url": "http://richardscheiwe.com"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/rscheiwe/npm-timsort"
   },
   "keywords": [
     "sort",
@@ -27,6 +18,14 @@
     "python",
     "javascript"
   ],
+  "author": {
+    "name": "Richard Scheiwe",
+    "url": "http://richardscheiwe.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rscheiwe/npm-timsort"
+  },
   "license": "MIT",
   "dependencies": {
     "mocha": "^5.2.0"
