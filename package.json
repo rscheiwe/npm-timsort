@@ -1,6 +1,6 @@
 {
   "name": "timsort-node",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Allows the use of Python's Timsort Algorithm in Javascript.",
   "homepage": "https://github.com/rscheiwe/npm-timsort",
   "main": "index.js",
