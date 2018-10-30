@@ -18,13 +18,10 @@ function binarySearch(array, item, start, end) {
 
   midPoint = Math.floor((start + end) / 2)
 
-  if (array[midPoint] < item) {
-    return binarySearch(array, item, midPoint + 1, end)
-  } else if (array[midPoint] > item) {
-    return binarySearch(array, item, start, midPoint - 1)
-  } else {
-    return midPoint
-  }
+  if (array[midPoint] < item) return binarySearch(array, item, midPoint + 1, end)
+  else if (array[midPoint] > item) return binarySearch(array, item, start, midPoint - 1)
+  return midPoint
+
 }
 
 // insertion sort for smaller sorting jobs (e.g., <64 elements)
@@ -61,7 +58,7 @@ function merge(left, right) {
   return result
 }
 
-// additional function for using merge sort, if necessary
+// (additional function for using or calling Merge Sort, if necessary)
 function mergeSort(arr) {
   if (arr.length < 2) return arr
   let middle = parseInt(arr.length / 2)
@@ -83,15 +80,15 @@ function timSort(array) {
   let newRun = [array[0]]
 
   for (index of range(1, length)) {
-    // if i is at the end of the array
+    // if index is at the end of the array
     if (index === length-1) {
       newRun.push([array[index]])
       runs.push(newRun)
       break
     }
-    // if the ith element of the array is less than the one before it
+    // if the index-th element of the array is less than the one before it
     if (array[index] < array[index-1]) {
-      // if new_run is set to None (NULL)
+      // if newRun is set to None (NULL)...
       if (!newRun.length) {
         runs.push([array[index]])
         newRun.push(array[index])
@@ -99,7 +96,7 @@ function timSort(array) {
         runs.push(newRun)
         newRun = [array[index]]
       }
-    // or if its equal to or more than
+    // ...or if its equal to or more than
     } else {
       newRun.push(array[index])
     }
@@ -112,7 +109,7 @@ function timSort(array) {
   for (let run of sortedRuns) {
     sortedArray = merge(sortedArray, run)
   }
-  
+
   return sortedArray
 }
 
