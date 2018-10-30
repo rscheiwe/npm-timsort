@@ -10,6 +10,8 @@ Timsort is Python's default sorting algorithm (`.sort()`), later adopted by Java
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
+The primary functions may be found in `index.js`.
+
 Install package with:
 ```
 npm install --save timsort-node
@@ -37,7 +39,7 @@ let array = [someArray]
 ...
 assert.deepEqual(timSort(array), array.sort(compare)) //where 'compare' is predefined at the beginning of index.test.js
 ```
-If the dependency for running tests (Mocha or Jest) is properly installed, simply write your tests and run `npm run test` in the console/terminal. (Currently, the `package.json` `scripts` is set to recognize Jest as the testing framework.) Alternatively, you may run `jest test/index.text.js --watch` to keep the testing environment running during changes. 
+If the dependency for running tests (Mocha or Jest) is properly installed, simply write your tests and run `npm run test` in the console/terminal. (Currently, the `package.json` `scripts` is set to recognize Jest as the testing framework.) Alternatively, you may run `jest test/index.text.js --watch` to keep the testing environment running during changes.
 
 ## Contributing
 
