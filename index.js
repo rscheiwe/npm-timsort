@@ -7,21 +7,22 @@ function range(start, count) {
 }
 
 // binary search as a helper function
-function binarySearch(array, item, start, end) {
-  let midPoint;
+function binarySearch(arr, x, start, end) {
 
-  if (start === end) {
-    if (array[start] > item) return start
-    return start + 1
-  }
-  if (start > end) return start
+    // Base Condtion
+    if (start > end) return start;
 
-  midPoint = Math.floor((start + end) / 2)
+    // Find the middle index
+    let mid=Math.floor((start + end)/2);
 
-  if (array[midPoint] < item) return binarySearch(array, item, midPoint + 1, end)
-  else if (array[midPoint] > item) return binarySearch(array, item, start, midPoint - 1)
-  return midPoint
+    // Compare mid with given key x
+    if (arr[mid]===x) return mid;
 
+    // If element at mid is greater than x, search in the left half of mid
+    if(arr[mid] > x) return binarySearch(arr, x, start, mid-1);
+
+    // If element at mid is smaller than x, search in the right half of mid
+    return binarySearch(arr, x, mid+1, end);
 }
 
 // insertion sort for smaller sorting jobs (e.g., <64 elements)
